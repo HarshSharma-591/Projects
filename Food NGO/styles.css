@@ -1,0 +1,114 @@
+*{
+    margin: 0; padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 0px;
+}
+
+
+header::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+
+.navbar{
+    margin-top: 37px ;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav__links{    
+    padding: 7px 23px;
+    margin: 0 5px;
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.07rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black
+}
+
+.nav__links:hover,
+.nav__links:focus{
+    color: red
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.home::before{
+    content: "";
+    background: url("images/bg.jpg") no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+    top: 0px;
+}
+
+.primary-text{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Padauk', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
+
+.description{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(0, 0 , 0);
+    text-shadow: 1px 0px white;
+    text-transform: none;
+    font-family: 'Padauk', sans-serif;
+}
+
+.btn{
+    margin: 23px 0;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 8px;
+    outline: 1px solid white;
+    cursor: pointer;
+    transition: background-color 100ms ease;
+}
+
+.btn:hover{
+    background-color: rgb(110, 105, 105);
+    color: black;
+    outline: 1px solid black;
+}
+

@@ -1,0 +1,249 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+
+:root{
+    --navbar-height: 100px;
+    --navbar-width: 999px;
+}
+
+/*Navigation Bar: Logo and image */
+#logo{
+    margin: 4px 20px;
+}
+#logo img{
+    margin: 8px 3px;
+    height: 50px;
+    border-radius: 9px;
+}
+
+/*Navigation Bar: List Styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    font-family: 'Acme', sans-serif;
+
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 23px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;   
+    height: 450px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: '';
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    position: absolute;  
+    height: 550px;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+#home h1{
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+#home p{
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Services section */
+
+#services-container{
+    margin-top: 19px;
+    position: relative;
+}
+#services-container h1{
+    text-shadow: 1px 1px red;
+    color: rgb(32, 32, 32)
+}
+#services{
+    margin: 14px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 13px;
+    border-radius: 23px;
+    background-color: #f8debc;
+}
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Client section */
+#client-section{
+    margin-top: 13px ;
+    position: relative
+}
+#client-section h1{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+#client::before{
+    content: "";
+    height: 344px;
+    width: 100%;
+    background: url('../b2.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.78;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.client-items{
+    padding: 34px;
+}
+#client img{
+    height: 89px; 
+}
+
+/* Contact us section */
+#contact{
+    position: relative;
+    margin-top: 100px;
+    border: 2px solid black
+}
+#contact h1{
+    text-shadow: 1px 1px red;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../contactus.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+
+#contact-box input, textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    border: 1px solid black
+}
+#submit{
+    margin: auto;
+    width: 145px;
+}
+#submit:hover{
+    cursor: pointer
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 3px 
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Cormorant Garamond', serif; 
+}
+.h-secondary{
+    font-size: 2.4rem;
+    color: rgb(255, 10, 10);
+    font-family: 'Cormorant Garamond', serif;   
+}
+.p-secondary{
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(122, 0, 0)  
+}
+.btn{
+    padding: 3px 23px;
+    border: 3px solid white;
+    background-color: rgb(6, 146, 6);
+    color: white;
+    margin:17px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
